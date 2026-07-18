@@ -1,7 +1,12 @@
-// const Img = lazy(() => import("../../assets/Profile Picture .jpg"));
-import Img from "../../assets/Profile Picture .jpg";
+import Img from "../../assets/Fares Photo.jpeg";
 import background from "../../assets/Hero Background.svg";
-import { FaGithub, FaLinkedin, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaWhatsapp,
+  FaInstagram,
+} from "react-icons/fa";
 import SecondSection from "./SecondSection";
 import { Link } from "react-router-dom";
 const data = [{ image: Img, Key: "10" }];
@@ -13,30 +18,32 @@ function FirstSection() {
         {/* Left Text Section */}
         <div className="w-full md:w-1/2 space-y-4">
           <h1 className="text-3xl md:text-5xl font-bold">
-            Hi, I'm <span className="text-blue-400">Youssef</span>
+            Hi, I'm <span className="text-blue-400">Fares</span>
           </h1>
-          <p className="text-lg md:text-2xl opacity-80">
-            Front-End React.js Developer
-          </p>
+          <p className="text-lg md:text-2xl opacity-80">Graphic Designer</p>
           <span className="flex gap-7 text-3xl">
             <span className="text-xl">Check out my social</span>
 
-            <a href="https://github.com/Youssefkhalil10" target="_blanck">
-              <FaGithub className="hover:text-gray-400 duration-200" />
-            </a>
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/youssef-khalil-21ab23278"
               target="_blanck"
             >
               <FaLinkedin className="hover:text-blue-400 duration-200" />
-            </a>
+            </a> */}
             <a
-              href="https://www.facebook.com/share/1MTZshKjKL/"
+              href="https://www.facebook.com/share/1BoYrD7vZZ/"
               target="_blanck"
             >
               <FaFacebook className="hover:text-blue-400 duration-200" />
             </a>
-            <a href="https://wa.me/201275294235" target="_blanck">
+            <a
+              href="https://www.instagram.com/fares_a_515?igsh=YnVtNGwzaW44MnNu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="hover:text-pink-500 duration-200" />
+            </a>
+            <a href="https://wa.me/201090249461" target="_blanck">
               <FaWhatsapp className="hover:text-green-400 duration-200" />
             </a>
           </span>

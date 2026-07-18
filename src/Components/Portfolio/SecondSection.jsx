@@ -1,40 +1,51 @@
-import Movies from "../../assets/Movies.png";
-import papaJohns from "../../assets/papaJohns.png";
-import Dash_bord from "../../assets/Dash Bord.png";
-import Pizza from "../../assets/Fast React Pizza.png";
-import Solar from "../../assets/Solar System.png";
-import E_commerce from "../../assets/E-commerce.png";
+import Project_1 from "../../assets/Project 1 .jpeg";
+import Project_2 from "../../assets/Project 2 .jpeg";
+import Project_3 from "../../assets/Project 3 .jpeg";
+import Project_4 from "../../assets/Project 4 .jpeg";
+import Project_5 from "../../assets/Project 5.jpeg";
+import Project_6 from "../../assets/Project 6.jpeg";
+import Molto from "../../assets/Molto Project.jpeg";
+import PUBG from "../../assets/PUBG Project.jpeg";
+import Project_9 from "../../assets/Project 9.jpeg";
+import Project_10 from "../../assets/Project 10.jpeg";
 const data = [
+  { title: "Project 1", img: Project_1 },
   {
-    title: "Fast React Pizza",
-    img: Pizza,
-    link: "https://fast-react-pizza-rust-nine.vercel.app/",
+    title: "Project 2 ",
+    img: Project_2,
   },
   {
-    title: "E-Commerce",
-    img: E_commerce,
-    link: "https://e-commerce-web-masters-seven.vercel.app/",
+    title: "Project 3",
+    img: Project_3,
   },
   {
-    title: "Web Trending Movies",
-    img: Movies,
-    link: "https://trending-movies-gamma.vercel.app/",
+    title: "Project 4",
+    img: Project_4,
   },
   {
-    title: "Papa johns Resturant",
-    img: papaJohns,
-    link: "https://papa-johns-web-master.vercel.app/",
-  },
-  //2
-  {
-    title: "Dash Board",
-    img: Dash_bord,
-    link: "https://dash-board-two-pi.vercel.app/",
+    title: "Project 5",
+    img: Project_5,
   },
   {
-    title: "Solar System",
-    img: Solar,
-    link: "https://youssefkhalil10.github.io/Solar-System/",
+    title: "Project 6",
+    img: Project_6,
+  },
+
+  {
+    title: "Project 9",
+    img: Project_9,
+  },
+  {
+    title: "Project 10",
+    img: Project_10,
+  },
+  {
+    title: "Molto Project",
+    img: Molto,
+  },
+  {
+    title: "PUBG Project",
+    img: PUBG,
   },
 ];
 
@@ -44,23 +55,23 @@ function SecondSection() {
       <h4 className="text-3xl font-bold mb-8">My Projects</h4>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {data.map((project, index) => (
-          <a
-            key={index}
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+        {data.map((project) => (
+          <div
+            key={project.title}
+            className="group relative transition-all cursor-pointer duration-300 hover:scale-105 hover:-translate-y-2 hover:z-10"
           >
-            <img
-              src={project.img}
-              alt={project.title}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <p className="text-lg font-semibold">{project.title}</p>
+            <div className="h-[350px] bg-zinc-900 rounded-lg flex items-center justify-center">
+              <img
+                src={project.img}
+                alt={project.title}
+                className="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </div>
-          </a>
+
+            <div className="p-4">
+              <p className="font-semibold">{project.title}</p>
+            </div>
+          </div>
         ))}
       </div>
     </section>

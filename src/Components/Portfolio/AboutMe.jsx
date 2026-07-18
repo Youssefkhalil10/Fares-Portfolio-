@@ -7,12 +7,12 @@ function AboutMe() {
       <div className="p-6 rounded-lg  shadow-lg ">
         <h3 className="text-2xl font-bold mb-4 text-blue-500">Summary</h3>
         <p className=" text-white leading-relaxed">
-          Front-End Developer with a strong foundation in HTML, CSS, JavaScript,
-          and React.js. Skilled in building responsive and interactive web
-          applications with a focus on clean UI and enhancing user experience.
-          Proficient in version control using Git/GitHub and integrating RESTful
-          APIs. Passionate about learning new technologies and collaborating in
-          dynamic team environments to deliver high-quality web solutions.
+          Graphic Designer with strong expertise in Adobe Photoshop and Adobe
+          Illustrator. Skilled in creating visually appealing designs, branding
+          materials, marketing content, and digital graphics with a focus on
+          creativity, visual communication, and brand consistency. Passionate
+          about transforming ideas into impactful designs while continuously
+          learning new design trends and techniques.
         </p>
       </div>
 

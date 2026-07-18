@@ -1,4 +1,14 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaGitAlt,
+  FaPalette,
+  FaPenNib,
+  FaPaintBrush,
+  FaInstagram,
+  FaLightbulb,
+} from "react-icons/fa";
 import {
   SiJavascript,
   SiTailwindcss,
@@ -10,6 +20,11 @@ import {
   SiReactquery,
   SiAxios,
   SiTestinglibrary,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobeindesign,
+  SiFigma,
+  SiCanva,
 } from "react-icons/si";
 
 import { TbApi } from "react-icons/tb";
@@ -20,86 +35,55 @@ function Skills() {
       <h3 className="text-2xl font-bold mb-4 text-blue-500">Skills</h3>
 
       <ul className="text-white leading-relaxed text-sm sm:text-base space-y-3">
-        {/* Core */}
         <li className="flex items-center gap-2">
-          <FaHtml5 className="text-orange-600" />
-          <strong>HTML5:</strong> Semantic HTML, Forms, Accessibility
+          <SiAdobephotoshop className="text-blue-500" />
+          <strong>Adobe Photoshop:</strong> Photo Manipulation, Retouching,
+          Compositing
         </li>
 
         <li className="flex items-center gap-2">
-          <FaCss3Alt className="text-blue-600" />
-          <strong>CSS3:</strong> Flexbox, Grid, Animations
+          <SiAdobeillustrator className="text-orange-500" />
+          <strong>Adobe Illustrator:</strong> Vector Design, Logo Design, Icons
         </li>
 
         <li className="flex items-center gap-2">
-          <SiJavascript className="text-yellow-400" />
-          <strong>JavaScript (ES6+)</strong>
+          <SiAdobeindesign className="text-pink-500" />
+          <strong>Adobe InDesign:</strong> Magazine & Print Layouts
         </li>
 
         <li className="flex items-center gap-2">
-          <FaReact className="text-blue-500" />
-          <strong>React.js:</strong> Components, Hooks, Routing
+          <SiFigma className="text-purple-500" />
+          <strong>Figma:</strong> UI Design, Wireframes, Prototyping
         </li>
 
         <li className="flex items-center gap-2">
-          <SiVite className="text-purple-500" />
-          <strong>Vite:</strong> Fast build tool for React apps
-        </li>
-
-        {/* Styling */}
-        <li className="flex items-center gap-2">
-          <SiTailwindcss className="text-blue-400" />
-          <strong>Tailwind CSS</strong>
+          <SiCanva className="text-cyan-500" />
+          <strong>Canva:</strong> Social Media & Marketing Designs
         </li>
 
         <li className="flex items-center gap-2">
-          <SiBootstrap className="text-purple-600" />
-          <strong>Bootstrap 5</strong>
-        </li>
-
-        {/* State Management */}
-        <li className="flex items-center gap-2">
-          <SiRedux className="text-purple-600" />
-          <strong>State Management:</strong> Redux, Redux Toolkit, Context API
-        </li>
-
-        {/* Data Fetching */}
-        <li className="flex items-center gap-2">
-          <SiReactquery className="text-red-500" />
-          <strong>React Query:</strong> Server State Management & Caching
+          <FaPalette className="text-pink-400" />
+          <strong>Brand Identity:</strong> Logo, Color Palette, Brand Guidelines
         </li>
 
         <li className="flex items-center gap-2">
-          <SiAxios className="text-indigo-500" />
-          <strong>APIs:</strong> RESTful APIs, Axios, Fetch API
-        </li>
-
-        {/* Backend Services */}
-        <li className="flex items-center gap-2">
-          <SiFirebase className="text-yellow-500" />
-          <strong>Firebase</strong>
+          <FaPenNib className="text-yellow-500" />
+          <strong>Typography:</strong> Font Pairing & Visual Hierarchy
         </li>
 
         <li className="flex items-center gap-2">
-          <SiSupabase className="text-green-500" />
-          <strong>Supabase</strong>
-        </li>
-
-        {/* Forms & Testing */}
-        <li className="flex items-center gap-2">
-          <SiFormspree className="text-pink-400" />
-          <strong>Forms:</strong> React Hook Form
+          <FaPaintBrush className="text-green-500" />
+          <strong>Print Design:</strong> Business Cards, Flyers, Brochures
         </li>
 
         <li className="flex items-center gap-2">
-          <SiTestinglibrary className="text-red-400" />
-          <strong>Testing:</strong> React Testing Library
+          <FaInstagram className="text-pink-500" />
+          <strong>Social Media Design:</strong> Posts, Stories, Ads, Banners
         </li>
 
-        {/* Tools */}
         <li className="flex items-center gap-2">
-          <FaGitAlt className="text-orange-600" />
-          <strong>Tools:</strong> Git, GitHub, NPM
+          <FaLightbulb className="text-yellow-400" />
+          <strong>Creative Skills:</strong> Layout, Composition, Color Theory
         </li>
       </ul>
     </div>
