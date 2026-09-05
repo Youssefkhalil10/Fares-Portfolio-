@@ -8,6 +8,7 @@ import Molto from "../../assets/Molto Project.jpeg";
 import PUBG from "../../assets/PUBG Project.jpeg";
 import Project_9 from "../../assets/Project 9.jpeg";
 import Project_10 from "../../assets/Project 10.jpeg";
+import Project_11 from "../../assets/Project 11.jpeg";
 const data = [
   { title: "Project 1", img: Project_1 },
   {
@@ -40,6 +41,10 @@ const data = [
     img: Project_10,
   },
   {
+    title: "Project 11",
+    img: Project_11,
+  },
+  {
     title: "Molto Project",
     img: Molto,
   },
@@ -68,9 +73,9 @@ function SecondSection() {
               />
             </div>
 
-            <div className="p-4">
+            {/* <div className="p-4">
               <p className="font-semibold">{project.title}</p>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
