@@ -35,7 +35,7 @@ function Skills() {
       <h3 className="text-2xl font-bold mb-4 text-blue-500">Skills</h3>
 
       <ul className="text-white leading-relaxed text-sm sm:text-base space-y-3">
-        <li className="flex items-center gap-2">
+        {/* <li className="flex items-center gap-2">
           <SiAdobephotoshop className="text-blue-500" />
           <strong>Adobe Photoshop:</strong> Photo Manipulation, Retouching,
           Compositing
@@ -44,7 +44,7 @@ function Skills() {
         <li className="flex items-center gap-2">
           <SiAdobeillustrator className="text-orange-500" />
           <strong>Adobe Illustrator:</strong> Vector Design, Logo Design, Icons
-        </li>
+        </li> */}
 
         <li className="flex items-center gap-2">
           <SiAdobeindesign className="text-pink-500" />
